@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
-# html.py - sublimelint package for checking html files
+# xml.py - sublimelint package for checking html files
 
 from xmllint_linter import XmllintLinter
 
 CONFIG = {
     'language': 'xml',
     'executable': 'xmllint',
-    'lint_args': ['-noout', '-']
+    'lint_args': ['-noout', '-'],
+    'test_existence_args': '--version',
 }
 
 

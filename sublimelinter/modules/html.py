@@ -6,7 +6,8 @@ from xmllint_linter import XmllintLinter
 CONFIG = {
     'language': 'html',
     'executable': 'xmllint',
-    'lint_args': ['-html', '-noout', '-']
+    'lint_args': ['-html', '-noout', '-'],
+    'test_existence_args': '--version',
 }
 
 
